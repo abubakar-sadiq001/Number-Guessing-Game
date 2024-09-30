@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    background-color: #000;
+}
+.container {
+    text-align: center;
+    padding: 30px 0px;
+}
+.container .center-h {
+    font-style: italic;
+    font-weight: 400;
+    color: #fff;
+}
+.container div .random-guess {
+    text-align: center;
+    font-size: 2.5rem;
+    font-style: italic;
+    margin: 15px 0px;
+    padding: 1.5rem 2.5rem;
+    color: blue;
+    background: linear-gradient(yellow, pink);
+    border-radius: 5px;
+    position: relative;
+    border: none;
+}
+.container div .random-guess::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 10px;
+    background: linear-gradient(yellow, pink);
+    left: -200px;
+    top: 40px;
+}
+.container div .random-guess::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 10px;
+    background: linear-gradient(yellow, pink);
+    right: -200px;
+    top: 40px;
+}
+.container .play-btn, .replay-btn {
+    padding: 10px;
+    border: 2px solid;
+    cursor: pointer;
+}
+.container .play-btn {
+    background-color: skyblue;
+    color: blue;
+    font-size: 20px;
+}
+.container .replay-btn {
+    background-color: rgb(234, 119, 119);
+    font-size: 20px;
+    color: #000;
+}
+.container .results {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.results .scoretexts {
+    /* background-color: green;
+    display: block */
+    background: linear-gradient(yellow, pink);
+    color: blue;
+    padding: .8rem;
+    font-style: italic;
+}
+.container .user-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+}
+.user-input .user-guess {
+    max-width: 200px;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+.user-guess::placeholder {
+    color: rgb(219, 222, 222);
+}
+.progress-tracker {
+    font-size: 105%;
+    font-style: italic;
+    color: #fff;
+}.container .game-over {
+    background-color: red;
+    color: #fff;
+    padding: 1rem;
+    display: none;
+}
+/* 4 Hiffans */
+span {
+    color: #fff;
+}

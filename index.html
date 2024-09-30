@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-over">
+            <p>💣🤬🤯 Game over page will reload after 2 seconds</p>
+        </div>
+        <!-- <h2 class="center-h">Guess a number between (1 and 30)</h2> -->
+        <h2 class="center-h">Guess hidden number between (1 and 30)</h2>
+        <div>
+            <button class="random-guess">?<button>
+        </div>
+        <div class="user-input">
+            <!-- <label for="guessing-input">Enter guess:</label> -->
+            <input type="number" class="user-guess" placeholder="1-30" id="inputEl">
+        </div>
+        <button class="play-btn">Check guess</button> <span>----</span>
+        <button class="replay-btn">Play again</button><br>
+        
+        <div class="results">
+            <div class="scoretexts">
+                <!-- <h3 class="score">💯 Scores = 0</h3>
+                <h3 class="lose">😓 Looses = 0</h3> -->
+                <h3 class="score"></h3>
+                <h3 class="lose"></h3>
+            </div>
+            <p class="progress-tracker">⭐ Start guessing...</p>
+        </div>
+    </button>
+    <script src="script.js"></script>
+</body>
+</html>
